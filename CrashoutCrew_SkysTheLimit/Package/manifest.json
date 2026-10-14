@@ -1,8 +1,10 @@
 {
     "name": "CrashoutCrewSkysTheLimit",
-    "version_number": "1.0.0",
-    "website_url": "https://github.com/xMcacutt/CrashoutCrewMods",
+    "version_number": "1.0.1",
+    "website_url": "https://github.com/xMcacutt/xMcacutt-CrashoutCrewMods/tree/master/CrashoutCrew_SkysTheLimit",
     "description": "Increases the box stacking size limit to 32... Which isn't quite the sky but close enough.",
     "dependencies": [
+        "BepInEx-BepInExPack-5.4.2100",
+        "xMcacutt-CrashoutCrewLobbyEnforcer-1.0.2"
     ]
 }

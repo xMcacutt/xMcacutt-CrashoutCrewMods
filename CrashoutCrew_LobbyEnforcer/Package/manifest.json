@@ -1,8 +1,10 @@
 {
     "name": "CrashoutCrewLobbyEnforcer",
-    "version_number": "1.0.0",
-    "website_url": "https://github.com/xMcacutt/CrashoutCrewMods",
+    "version_number": "1.0.2",
+    "website_url": "https://github.com/xMcacutt/xMcacutt-CrashoutCrewMods/tree/master/CrashoutCrew_LobbyEnforcer",
     "description": "Prevents players joining each other without mod compatibility.",
     "dependencies": [
+        "BepInEx-BepInExPack-5.4.2100",
+        "xMcacutt-CrashoutCrewLocalizerFallbacks-1.0.2"
     ]
 }

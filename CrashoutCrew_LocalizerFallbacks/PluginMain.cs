@@ -8,7 +8,7 @@ namespace CrashoutCrew_LocalizerFallbacks
     public class PluginMain : BaseUnityPlugin
     {
         public const string GameName = TemplatePluginInfo.GAME_NAME;
-        private const string Version = "1.0.0";
+        private const string Version = "1.0.2";
 
         private readonly Harmony _harmony = new Harmony(TemplatePluginInfo.PLUGIN_GUID);
 

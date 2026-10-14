@@ -1,8 +1,12 @@
 {
     "name": "CrashoutCrewArchipelagoClient",
-    "version_number": "1.0.0",
-    "website_url": "https://github.com/xMcacutt/CrashoutCrewMods",
+    "version_number": "1.0.3",
+    "website_url": "https://github.com/xMcacutt/xMcacutt-CrashoutCrewMods/tree/master/CrashoutCrew_APClient",
     "description": "Archipelago.gg implementation for Crashout Crew",
     "dependencies": [
+        "BepInEx-BepInExPack-5.4.2100",
+        "xMcacutt-CrashoutCrewLocalizerFallbacks-1.0.2",
+        "xMcacutt-CrashoutCrewLobbyEnforcer-1.0.2",
+        "xMcacutt-CrashoutCrewSkysTheLimit-1.0.1"
     ]
 }

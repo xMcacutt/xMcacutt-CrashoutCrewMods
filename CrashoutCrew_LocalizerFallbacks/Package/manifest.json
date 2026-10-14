@@ -1,8 +1,9 @@
 {
     "name": "CrashoutCrewLocalizerFallbacks",
-    "version_number": "1.0.0",
-    "website_url": "https://github.com/xMcacutt/CrashoutCrewMods",
+    "version_number": "1.0.2",
+    "website_url": "https://github.com/xMcacutt/xMcacutt-CrashoutCrewMods/tree/master/CrashoutCrew_LocalizerFallbacks",
     "description": "Allows unfound localization ids to fallback to the id itself.",
     "dependencies": [
+        "BepInEx-BepInExPack-5.4.2100"
     ]
 }

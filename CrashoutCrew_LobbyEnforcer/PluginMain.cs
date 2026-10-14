@@ -10,7 +10,7 @@ namespace CrashoutCrew_LobbyEnforcer;
 public class PluginMain : BaseUnityPlugin
 {
     public const string GameName = TemplatePluginInfo.GAME_NAME;
-    private const string Version = "1.0.0";
+    private const string Version = "1.0.2";
 
     private readonly Harmony _harmony = new(TemplatePluginInfo.PLUGIN_GUID);
     public static ManualLogSource? logger;

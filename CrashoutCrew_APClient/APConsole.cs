@@ -14,10 +14,44 @@ public class APConsole : MonoBehaviour
 {
     private static readonly Dictionary<string, string> KeywordColors = new()
     {
+        {"Bell", "#C325FA"},
+        {"Shop", "#FFE552"},
+        {"Charge Pad", "#FF8C52"},
+        {"Lock In Protocol", "#F21F1F"},
+        {"Fire Extinguisher", "#F21F1F"},
+        {"Super Scrubber", "#72A5ED"},
+        {"Scrubbie", "#72A5ED"},
+        {"Standard Shelf", "#6FDE62"},
+        {"Small Fire Sprinkler", "#00B7FF"},
+        {"Sturdy Shelf", "#4252FF"},
+        {"Teleporter", "#00FFFB"},
+        {"Trash Compactor", "#D3E3E3"},
+        {"Vacuum Cleaner", "#FFDB00"},
+        {"Leaf Blower", "#00FF08"},
+        {"Giga Sprinkler", "#00B7FF"},
+        {"Water Balloon Pump", "#F21F1F"},
+        {"Wild Card Station", "#FF00E6"},
+        {"Nitro Canisters", "#FC8242"},
+        {"Aromatherapy", "#CE6CF0"},
+        {"Racing Tires", "#B2ACE8"},
+        {"Blast Shields", "#D3E3E3"},
+        {"Tire Chains", "#D3E3E3"},
+        {"Cup Holder", "#CE6CF0"},
+        {"Personal Fan", "#9EF0E1"},
+        {"The Grippers", "#F5EB1D"},
+        {"Sick-ass Spoiler", "#FFCD00"},
+        {"Speed Upgrade", "#9355F2"},
+        {"Strength Upgrade", "#9355F2"},
+        {"Boost Upgrade", "#9355F2"},
+        {"Stress Upgrade", "#9355F2"},
+        {"Random Cosmetic", "#E0C38D"},
+        {"Contract", "#ffffff"},
+        {"Shift", "#ffffff"},
+        {"Delivery", "#ffffff"},
     };
 
-    private const string FontName = "";
-    private readonly Color _textColor = Color.white;
+    private const string FontName = "ChelseaMarket-Regular SDF";
+    private readonly Color _textColor = new(0.85f, 0.85f, 0.85f, 1f);
     private readonly Color _backColor = new(0, 0, 0, 0.8f);
 
     private const int MaxHistoryEntries = 1000;
@@ -86,9 +120,9 @@ public class APConsole : MonoBehaviour
     {
         if (_instance != null)
             return;
-        var fonts = Resources.FindObjectsOfTypeAll<TMP_FontAsset>();
-        foreach(var font in fonts)
-            Console.WriteLine(font.name);
+        // var fonts = Resources.FindObjectsOfTypeAll<TMP_FontAsset>();
+        // foreach(var font in fonts)
+        //     PluginMain.logger.LogInfo(font.name);
         _font = Resources.FindObjectsOfTypeAll<TMP_FontAsset>().FirstOrDefault(x => x.name == FontName);
         var consoleObject = new GameObject("ArchipelagoConsoleUI");
         DontDestroyOnLoad(consoleObject);

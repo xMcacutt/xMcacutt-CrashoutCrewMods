@@ -11,7 +11,7 @@ namespace CrashoutCrew_SkysTheLimit;
 public class PluginMain : BaseUnityPlugin
 {
     public const string GameName = TemplatePluginInfo.GAME_NAME;
-    private const string Version = "1.0.0";
+    private const string Version = "1.0.1";
 
     private readonly Harmony _harmony = new(TemplatePluginInfo.PLUGIN_GUID);
 

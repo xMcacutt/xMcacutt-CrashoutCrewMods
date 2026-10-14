@@ -164,7 +164,7 @@
 
         <Copy
                 SourceFiles="@(PluginFiles)"
-                DestinationFiles="@(PluginFiles->'$(ProjectDir)Package\%(RecursiveDir)%(Filename)%(Extension)')"
+                DestinationFolder="$(ProjectDir)Package"
                 OverwriteReadOnlyFiles="true"
         />
 

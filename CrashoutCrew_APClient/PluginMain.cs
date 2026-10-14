@@ -44,7 +44,7 @@ public class PluginMain : BaseUnityPlugin
     }
 
     public const string GameName = TemplatePluginInfo.GAME_NAME;
-    private const string Version = "1.0.0";
+    private const string Version = "1.0.3";
 
     private readonly Harmony _harmony = new(TemplatePluginInfo.PLUGIN_GUID);
     public static ManualLogSource? logger;
@@ -78,8 +78,17 @@ public class PluginMain : BaseUnityPlugin
         if (modDir == null)
             throw new Exception("Mod directory not found");
         LocalizationsPath = Path.Combine(modDir, "Localizations", "locs.json");
-        foreach (var bundlePath in Directory.GetFiles(Path.Combine(modDir, "Bundles")))
+        if (!File.Exists(LocalizationsPath))
+            LocalizationsPath = Path.Combine(modDir, "locs.json");
+        var bundleNames = new[] {"aggro-button-setting", "aggro-text-setting"};
+        var bundlesPath = Path.Combine(modDir, "Bundles");
+        if (!Directory.Exists(bundlesPath))
+            bundlesPath = modDir;
+        foreach (var bundleName in bundleNames)
         {
+            var bundlePath = Path.Combine(bundlesPath, bundleName);
+            if (!File.Exists(bundlePath))
+                throw new Exception($"Bundle {bundleName} not found");
             var bundle = AssetBundle.LoadFromFile(bundlePath);
             CustomBundles.Add(Path.GetFileNameWithoutExtension(bundlePath), bundle);
         }

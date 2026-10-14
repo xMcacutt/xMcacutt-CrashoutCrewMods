@@ -108,7 +108,7 @@
       <ProjectReference Include="..\CrashoutCrew_LobbyEnforcer\CrashoutCrew_LobbyEnforcer.csproj" />
     </ItemGroup>
 
-    <Target Name="ILRepack" AfterTargets="Build">
+    <Target Name="ILRepack">
         <ItemGroup>
             <InputAssemblies Include="$(NuGetPackageRoot)archipelago.multiclient.net\6.7.1\lib\netstandard2.0\Archipelago.MultiClient.Net.dll" />
             <InputAssemblies Include="$(NuGetPackageRoot)archipelago.multiclient.net\6.7.1\lib\netstandard2.0\Newtonsoft.Json.dll"/>
@@ -144,7 +144,7 @@
     </Target>
 
 
-    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent" DependsOnTargets="ILRepack">
         <ItemGroup>
             <LibraryFiles Include="$(ProjectDir)Libraries\**\*.*" />
             <BundleFiles Include="$(ProjectDir)Bundles\**\*.*" />
@@ -195,7 +195,7 @@
 
         <Copy
                 SourceFiles="@(PluginFiles)"
-                DestinationFiles="@(PluginFiles->'$(ProjectDir)Package\%(RecursiveDir)%(Filename)%(Extension)')"
+                DestinationFolder="$(ProjectDir)Package"
                 OverwriteReadOnlyFiles="true"
         />
 

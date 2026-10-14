@@ -1,17 +1,17 @@
 # Crashout Crew - Archipelago Client
 
-This mod can and SHOULD be installed through the [ThunderStore Mod Manager](https://thunderstore.io/c/crashout-crew/)
+This mod can and SHOULD be installed through the [ThunderStore Mod Manager](https://thunderstore.io/c/crashout-crew/p/xMcacutt/CrashoutCrewArchipelagoClient)
 
 Manual installation is possible but at your own peril. 
 
 ### Other Dependencies 
-- [Sky's The Limit]()
-- [Lobby Enforcer]()
-- [Localizer Fallbacks]()
+- [Sky's The Limit](https://thunderstore.io/c/crashout-crew/p/xMcacutt/CrashoutCrewSkysTheLimit/)
+- [Lobby Enforcer](https://thunderstore.io/c/crashout-crew/p/xMcacutt/CrashoutCrewLobbyEnforcer/)
+- [Localizer Fallbacks](https://thunderstore.io/c/crashout-crew/p/xMcacutt/CrashoutCrewLocalizerFallbacks/)
 
 ## Implementation Details
 
-[The apworld can be found here](https://github.com/xMcacutt-Archipelago/Archipelago-VeryVeryValet/releases/latest)
+[The apworld can be found here](https://github.com/xMcacutt-Archipelago/Archipelago-CrashoutCrew/releases/latest)
 
 ### Connecting
 ***WARNING*** - You must launch the game through steam for this mod to work. Launching from the executable will make it impossible to enter to a lobby.
