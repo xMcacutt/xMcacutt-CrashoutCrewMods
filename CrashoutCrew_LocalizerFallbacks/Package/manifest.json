@@ -1,0 +1,8 @@
+{
+    "name": "CrashoutCrewLocalizerFallbacks",
+    "version_number": "1.0.0",
+    "website_url": "https://github.com/xMcacutt/CrashoutCrewMods",
+    "description": "Allows unfound localization ids to fallback to the id itself.",
+    "dependencies": [
+    ]
+}

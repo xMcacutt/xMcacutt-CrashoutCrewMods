@@ -1,0 +1,8 @@
+{
+    "name": "CrashoutCrewLobbyEnforcer",
+    "version_number": "1.0.0",
+    "website_url": "https://github.com/xMcacutt/CrashoutCrewMods",
+    "description": "Prevents players joining each other without mod compatibility.",
+    "dependencies": [
+    ]
+}

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrashoutCrew_APClient", "CrashoutCrew_APClient\CrashoutCrew_APClient.csproj", "{9FD9E2B3-65A3-45BD-892B-4454B8FDCDC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrashoutCrew_SkysTheLimit", "CrashoutCrew_SkysTheLimit\CrashoutCrew_SkysTheLimit.csproj", "{6E2B4440-DD7A-4B30-8AC7-FDBB17BAB3BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrashoutCrew_LobbyEnforcer", "CrashoutCrew_LobbyEnforcer\CrashoutCrew_LobbyEnforcer.csproj", "{326E1DFF-6DAD-4356-B663-73FD0BFE2F22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrashoutCrew_LocalizerFallbacks", "CrashoutCrew_LocalizerFallbacks\CrashoutCrew_LocalizerFallbacks.csproj", "{98E75930-4400-407D-A36B-633F4603B217}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FD9E2B3-65A3-45BD-892B-4454B8FDCDC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD9E2B3-65A3-45BD-892B-4454B8FDCDC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD9E2B3-65A3-45BD-892B-4454B8FDCDC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD9E2B3-65A3-45BD-892B-4454B8FDCDC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E2B4440-DD7A-4B30-8AC7-FDBB17BAB3BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2B4440-DD7A-4B30-8AC7-FDBB17BAB3BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2B4440-DD7A-4B30-8AC7-FDBB17BAB3BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2B4440-DD7A-4B30-8AC7-FDBB17BAB3BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{326E1DFF-6DAD-4356-B663-73FD0BFE2F22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{326E1DFF-6DAD-4356-B663-73FD0BFE2F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{326E1DFF-6DAD-4356-B663-73FD0BFE2F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{326E1DFF-6DAD-4356-B663-73FD0BFE2F22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98E75930-4400-407D-A36B-633F4603B217}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98E75930-4400-407D-A36B-633F4603B217}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98E75930-4400-407D-A36B-633F4603B217}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98E75930-4400-407D-A36B-633F4603B217}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

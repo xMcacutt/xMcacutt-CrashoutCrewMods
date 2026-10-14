@@ -1,0 +1,17 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="ILRepacker" AfterTargets="Build">
+        <ItemGroup>
+            <InputAssemblies Include="$(NuGetPackageRoot)archipelago.multiclient.net\6.7.1\lib\netstandard2.0\Archipelago.MultiClient.Net.dll" />
+            <InputAssemblies Include="$(NuGetPackageRoot)archipelago.multiclient.net\6.7.1\lib\netstandard2.0\Newtonsoft.Json.dll"/>
+        </ItemGroup>
+
+        <ILRepack
+                Parallel="true"
+                Internalize="true"
+                InputAssemblies="@(InputAssemblies)"
+                TargetKind="SameAsPrimaryAssembly"
+                OutputFile="$(GAME_DIRECTORY)\BepInEx\plugins\$(PLUGIN_NAME)\Archipelago.Multiclient.Net.dll"
+                LibraryPath="$(GAME_MANAGED_PATH)"
+        />
+    </Target>
+</Project>

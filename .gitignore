@@ -1,0 +1,13 @@
+﻿/*/output/
+/*/Package/*
+!/*/Package/README.md
+!/*/Package/icon.png
+!/*/Package/manifest.json
+/.idea/.idea.CrashoutCrewMods/.idea/dictionaries/project.xml
+/.idea/.idea.CrashoutCrewMods/.idea/.gitignore
+/.idea/.idea.CrashoutCrewMods/.idea/encodings.xml
+/.idea/.idea.CrashoutCrewMods/.idea/indexLayout.xml
+/.idea/.idea.CrashoutCrewMods/.idea/vcs.xml
+/CrashoutCrewMods.sln.DotSettings.user
+/*/bin/*
+/*/obj/*
